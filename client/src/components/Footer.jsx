@@ -14,11 +14,11 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Useful Info</h4>
                     <ul>
-                        <li><a href="#">Electric Supply Code 2007</a></li>
-                        <li><a href="#">North Bihar Power Distribution Co. Ltd.</a></li>
-                        <li><a href="#">South Bihar Power Distribution Co. Ltd.</a></li>
-                        <li><a href="#">Bihar State Power Transmission Co. Ltd.</a></li>
-                        <li><a href="#">Bihar State Power Generation Co. Ltd.</a></li>
+                        <li><a href="Electricity-Supply-Code-2007.pdf">Electric Supply Code 2007</a></li>
+                        <li><a href="https://nbpdcl.co.in/(S(ozeqij4swjf23wo0ss41rru2))/frmhome.aspx">North Bihar Power Distribution Co. Ltd.</a></li>
+                        <li><a href="https://www.sbpdcl.co.in/(S(zwvjqayvw1gsmao232tkhnui))/frmhome.aspx">South Bihar Power Distribution Co. Ltd.</a></li>
+                        <li><a href="https://www.bsptcl.in/">Bihar State Power Transmission Co. Ltd.</a></li>
+                        <li><a href="https://bspgcl.co.in/">Bihar State Power Generation Co. Ltd.</a></li>
                     </ul>
                 </div>
 
@@ -26,11 +26,11 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Important Links</h4>
                     <ul>
-                        <li><a href="#">Pensioner Information</a></li>
-                        <li><a href="#">Urja Auditorium</a></li>
-                        <li><a href="#">Urja Cricket Stadium</a></li>
-                        <li><a href="#">Consumer Grievance Redressal System</a></li>
-                        <li><a href="#">BSPHCL Grievance Redressal System - For Employee & Pensioner</a></li>
+                        <li><a href="https://pensionerdetails.bsphcl.co.in/LifeCertificate">Pensioner Information</a></li>
+                        <li><a href="https://bsphcl.co.in/auditorium/">Urja Auditorium</a></li>
+                        <li><a href="https://urjastadium.bsphcl.co.in/">Urja Cricket Stadium</a></li>
+                        <li><a href="https://cgrf.bsphcl.co.in/">Consumer Grievance Redressal System</a></li>
+                        <li><a href="http://125.16.220.20:8078/">BSPHCL Grievance Redressal System - For Employee & Pensioner</a></li>
                     </ul>
                 </div>
 

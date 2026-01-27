@@ -43,12 +43,77 @@ const Contact = () => {
     return (
         <section className="section-padding" id="contact">
             <div className="container">
-                <div className="section-header">
-                    <h2>Key Contacts</h2>
-                    <p>Leadership team and important helpline numbers.</p>
-                </div>
+                <div className="contact-wrapper">
 
-                <div className="contact-wrapper" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
+                    {/* Key Contacts Section */}
+                    <div className="key-contacts-container">
+                        <div style={{ marginBottom: '30px' }}>
+                            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', marginBottom: '10px' }}>Key Contacts</h2>
+                            <p style={{ color: 'var(--text-muted)' }}>Leadership team and important helpline numbers.</p>
+                        </div>
+
+                        <div className="grid-layout contact-grid">
+                            {/* Minister */}
+                            <div className="contact-card highlight-card">
+                                <div className="card-header">
+                                    <div className="icon-avatar"><i className="ri-government-fill"></i></div>
+                                    <div>
+                                        <h3>Hon'ble Minister</h3>
+                                        <span className="designation">Department of Energy</span>
+                                    </div>
+                                </div>
+                                <div className="contact-info">
+                                    <p><i className="ri-phone-line"></i> (0612)-2506224</p>
+                                    <p><i className="ri-printer-line"></i> Fax: 2506225</p>
+                                </div>
+                            </div>
+
+                            {/* CMD */}
+                            <div className="contact-card">
+                                <div className="card-header">
+                                    <div className="icon-avatar"><i className="ri-user-star-fill"></i></div>
+                                    <div>
+                                        <h3>Sri Manoj Kumar Singh, IAS</h3>
+                                        <span className="designation">Chairman-cum-MD, BSPHCL</span>
+                                    </div>
+                                </div>
+                                <div className="contact-info">
+                                    <p><i className="ri-phone-line"></i> (0612)-2504036</p>
+                                    <p><i className="ri-printer-line"></i> Fax: 2504968</p>
+                                    <p><i className="ri-mail-send-line"></i> cmdbsphcl@bihar.gov.in</p>
+                                </div>
+                            </div>
+
+                            {/* MD BSPTCL */}
+                            <div className="contact-card">
+                                <div className="card-header">
+                                    <div className="icon-avatar"><i className="ri-user-tie-fill"></i></div>
+                                    <div>
+                                        <h3>Sri Rahul Kumar, IAS</h3>
+                                        <span className="designation">Managing Director, BSPTCL</span>
+                                    </div>
+                                </div>
+                                <div className="contact-info">
+                                    <p><i className="ri-phone-line"></i> (0612)-2504442</p>
+                                </div>
+                            </div>
+
+                            {/* Consumer Complaint */}
+                            <div className="contact-card">
+                                <div className="card-header">
+                                    <div className="icon-avatar"><i className="ri-customer-service-fill"></i></div>
+                                    <div>
+                                        <h3>Online Defect/Complaint</h3>
+                                        <span className="designation">For Consumer</span>
+                                    </div>
+                                </div>
+                                <div className="contact-info">
+                                    <p><i className="ri-phone-line"></i> 1912 (Toll Free)</p>
+                                    <p><i className="ri-global-line"></i> www.bsphcl.co.in</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* Contact Form Section */}
                     <div className="contact-form-container" style={{ background: 'var(--card-bg)', padding: '30px', borderRadius: '20px', border: '1px solid var(--border-color)' }}>
@@ -97,70 +162,6 @@ const Contact = () => {
                         </form>
                     </div>
 
-                    <div className="grid-layout contact-grid" style={{ gridTemplateColumns: '1fr' }}>
-                        {/* Minister */}
-                        <div className="contact-card highlight-card">
-                            <div className="card-header">
-                                <div className="icon-avatar"><i className="ri-government-fill"></i></div>
-                                <div>
-                                    <h3>Hon'ble Minister</h3>
-                                    <span className="designation">Department of Energy</span>
-                                </div>
-                            </div>
-                            <div className="contact-info">
-                                <p><i className="ri-phone-line"></i> (0612)-2506224</p>
-                                <p><i className="ri-printer-line"></i> Fax: 2506225</p>
-                            </div>
-                        </div>
-
-                        {/* CMD */}
-                        <div className="contact-card">
-                            <div className="card-header">
-                                <div className="icon-avatar"><i className="ri-user-star-fill"></i></div>
-                                <div>
-                                    <h3>Sri Manoj Kumar Singh, IAS</h3>
-                                    <span className="designation">Chairman-cum-MD, BSPHCL</span>
-                                </div>
-                            </div>
-                            <div className="contact-info">
-                                <p><i className="ri-phone-line"></i> (0612)-2504036</p>
-                                <p><i className="ri-printer-line"></i> Fax: 2504968</p>
-                                <p><i className="ri-mail-send-line"></i> cmdbsphcl@bihar.gov.in</p>
-                            </div>
-                        </div>
-
-                        {/* MD BSPTCL */}
-                        <div className="contact-card">
-                            <div className="card-header">
-                                <div className="icon-avatar"><i className="ri-user-tie-fill"></i></div>
-                                <div>
-                                    <h3>Sri Rahul Kumar, IAS</h3>
-                                    <span className="designation">Managing Director, BSPTCL</span>
-                                </div>
-                            </div>
-                            <div className="contact-info">
-                                <p><i className="ri-phone-line"></i> (0612)-2504442</p>
-                            </div>
-                        </div>
-
-                        {/* We can add more cards here dynamically if needed */}
-
-                        {/* Consumer Complaint */}
-                        <div className="contact-card">
-                            <div className="card-header">
-                                <div className="icon-avatar"><i className="ri-customer-service-fill"></i></div>
-                                <div>
-                                    <h3>Online Defect/Complaint</h3>
-                                    <span className="designation">For Consumer</span>
-                                </div>
-                            </div>
-                            <div className="contact-info">
-                                <p><i className="ri-phone-line"></i> 1912 (Toll Free)</p>
-                                <p><i className="ri-global-line"></i> www.bsphcl.co.in</p>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </section>

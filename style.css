@@ -169,17 +169,17 @@ ul {
 
 .logo-text h1 {
     font-family: var(--font-heading);
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.2;
     color: var(--text-main);
 }
 
 .logo-text span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     display: block;
 }
 
@@ -677,8 +677,22 @@ footer {
 }
 
 /* Contact Section Styles */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .contact-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .contact-card {
